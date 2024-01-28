@@ -2,7 +2,7 @@ from datetime import datetime
 import json
 
 # Load JSON data from the file
-with open('D:\programing\Athan claender\prayer_time.json', 'r', encoding='utf-8') as json_file:
+with open('/home/adnan/Documents/github/Athan-calender/prayer_time.json', 'r', encoding='utf-8') as json_file:
     data = json.load(json_file)
 
 # Get today's date in the format used in the JSON file
@@ -15,7 +15,7 @@ for entry in data:
         today_timings = entry['timings']
         break
 # print(today_timings)
-# Print or use today's timings
+# Print today's timings
 if today_timings:
     print(f"Timings for today ({today_date}):")
     print(f"Fajr: {today_timings['Fajr']}")
