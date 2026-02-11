@@ -44,8 +44,9 @@ for entry in data['data']:
     output_data.append(date_info)
 
 # Save data to a JSON file
-output_file_path = r'/home/adnan/Documents/github/Athan-calender/prayer_time.json'
+output_file_path = r'<path>/prayer_time.json'
 with open(output_file_path, 'w', encoding='utf-8') as json_file:
     json.dump(output_data, json_file, indent=4)
 
 print(f'Data has been saved to {output_file_path}')
+
