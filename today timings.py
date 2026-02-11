@@ -2,7 +2,7 @@ from datetime import datetime
 import json
 
 # Load JSON data from the file
-with open('/home/adnan/Documents/github/Athan-calender/prayer_time.json', 'r', encoding='utf-8') as json_file:
+with open('', 'r', encoding='utf-8') as json_file:
     data = json.load(json_file)
 
 # Get today's date in the format used in the JSON file
@@ -25,6 +25,7 @@ if today_timings:
     print(f"Isha: {today_timings['Isha']}")
 else:
     print("No timings found for today.")
+
 
 
 next_prayer = None
